@@ -44,7 +44,7 @@ vix_calc = function(Data,rf_near = 0.002,rf_next = 0.002, nearT=28, nextT=35) {
   #initialise vix vector
   vix = c()
   # #looping through each minute of the trading day
-  for (i in 1:405){
+  for (i in 1:237){
 
     #set tmp1 (tmp2) as the subset for the repsective minute of the trading day
     tmp1= nearTerm[nearTerm$QuoteTime==(min(nearTerm$QuoteTime)+i-1),]
